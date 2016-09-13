@@ -1,0 +1,3 @@
+#files below will be ignore to upload to the repository
+.DS_Store
+node_modules

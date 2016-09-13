@@ -1,0 +1,22 @@
+{
+  "name": "fpost-it",
+  "version": "1.0.0",
+  "description": "simple wall app for people to post/addvertise school services",
+  "main": "app.js",
+  "scripts": {
+    "test": "fpost-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dglez/fpost-it.git"
+  },
+  "author": "{GSL}",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dglez/fpost-it/issues"
+  },
+  "homepage": "https://github.com/dglez/fpost-it#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
