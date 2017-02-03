@@ -1,31 +1,17 @@
 {
   "name": "fpost-it",
-  "version": "1.0.0",
-  "description": "simple wall app for people to post/advertise school services",
-  "main": "app.js",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "test": "fpost-it"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dglez/fpost-it.git"
-  },
-  "author": "Team Rocket",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dglez/fpost-it/issues"
-  },
-  "homepage": "https://github.com/dglez/fpost-it#readme",
   "dependencies": {
-    "body-parser": "~1.15.1",
+    "body-parser": "~1.16.0",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.2.0",
-    "express": "~4.13.4",
-    "hbs": "~4.0.0",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "hbs": "~4.0.1",
     "morgan": "~1.7.0",
-    "node-sass-middleware": "0.8.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.2"
   }
 }
