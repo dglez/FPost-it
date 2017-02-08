@@ -147,3 +147,6 @@ fabric.properties
 # Configuration files
 config
 ./idea/vcs.xml
+
+# Public libraries from Bower
+public/libs
