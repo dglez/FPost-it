@@ -2,7 +2,7 @@
  * Created by alfredo on 2/8/2017.
  */
 
-angular.module("appService", []).factory('App', ['$http', function($http){
+angular.module("AppService", []).factory('app', ['$http', function($http){
 
     return {
         // Gets all the posts
