@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <head>
+        <meta charset="utf-8">
+        <base href="/">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <!-- libs -->
-    <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- libs -->
+        <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-    <!--Custom css-->
-    <link href="css/style.css" rel="stylesheet">
+        <!--Custom css-->
+        <link href="css/style.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-    <title>Title</title>
-</head>
-<body>
-    <h1>This is me now</h1>
+        <title>Title</title>
+    </head>
+    <body ng-app="app" ng-controller="MainController">
+        <div class="container">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="libs/jquery/dist/jquery.min.js"></script>
+            <!--header of page-->
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">FPost-it</a>
+                </div>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+                <!--links and routing-->
+                <ul class="nav nav-bar">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/posts">Posts</a></li>
+                </ul>
+            </nav>
 
-</body>
+            <!--angular dynamic content-->
+            <div ng-view></div>
+
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="libs/jquery/dist/jquery.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!--angular core-->
+        <script src="libs/angular/angular.js"></script>
+        <script src="libs/angular-route/angular-route.js"></script>
+
+        <!--angular custom-->
+        <script src="js/controllers/MainCtrl.js"></script>
+        <script src="js/controllers/PostsCtrl.js"></script>
+        <script src="js/services/AppService.js"></script>
+        <script src="js/appRoutes.js"></script>
+        <script src="js/app.js"></script>
+
+    </body>
 </html>
